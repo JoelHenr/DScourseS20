@@ -21,7 +21,11 @@ df$perchnge <- (df$diff/df$GDP)*100
 ggplot(data = df, aes(x=df$DATE,y=perchnge))+ggtitle("Change in US GDP Over Time")+ 
   xlab("Time") + ylab("US GDP") + geom_line()+theme_clean()
 
+ggplot(data = df, aes(x=df$DATE,y=perchnge))+ggtitle("Change in US GDP Over Time")+ 
+  xlab("Time") + ylab("US GDP") + geom_point()+theme_stata()
 
+ggplot(data = df, aes(x=df$DATE,y=perchnge))+ggtitle("Change in US GDP Over Time")+ 
+  xlab("Time") + ylab("US GDP") + geom_line()+theme_economist_white()
 
 
   
