@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{PS7}
+\author{Joel Henriques}
+\date{March 2020}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+\section{Problems 7 and 8}
+\item The first regression that utilizes listwise deletion has drastically different betas than the other two regressions. The other two regression use the mean of logwages and replaces these missing values with the average. Therefore, the results of these regressions are much more skewed towards the mean of logwages. Whereas, the listwise regression does not appear to have this issue and ignores the random missing values. So, the results of the betas for the last two regression are completely identical and lower than the results from the listwise regression. 
+\item I am still searching for data on whether minimum wage policies actually stimulate the economy. Currently, I am using fred, US Bureau of Economic Analysis, and etc. I really need to find more data on what causes the need for minimum wage, and I am hoping to use machine learning in order to predict other regions that are more likely or less likely to adopt an increase in minimum wage policy. I am thinking that it might be a probit or logit model for the dependent variable, since some states have increase minimum wage compared to the federal level. 
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=.60]{PS7a.png}
+\caption{Regressions with Missing and Non-missing Values}
+\label{fig: Regressions with Missing and Nonmissing Values}
+
+
+\centering
+\includegraphics[scale=.60]{PS7b.png}
+\caption{Mice Package Regression}
+\label{fig:universe}
+\end{figure}
+
+
+\end{document}
